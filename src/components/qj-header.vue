@@ -7,7 +7,7 @@
         </el-col>
         <el-col :span="20">  
           <div class="menu-right">
-            <div>sdfsdf</div>
+            <div>菜单栏</div>
           </div>
         </el-col>
       </el-row>

@@ -6,6 +6,7 @@ import qjNavone from '../components/content/qj-navone'
 import qjGrid from '../components/content/qj-grid'
 import qjForm from '../components/content/qj-form'
 import qjList from '../components/content/qj-list'
+import qjCharts from '../components/content/qj-charts'
 
 export default new VueRouter({
 	routes:[
@@ -28,6 +29,10 @@ export default new VueRouter({
 				{
 					path:"list",
 					component:qjList
+				},
+				{
+					path:"charts",
+					component:qjCharts
 				}
 			]
 		},

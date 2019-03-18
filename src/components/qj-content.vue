@@ -28,18 +28,23 @@
               <i class="el-icon-menu"></i>
               <span slot="title">导航二</span>
             </template>
-            <el-menu-item index="2-1">选项1</el-menu-item>
-            <el-menu-item index="2-2">选项2</el-menu-item>   
+            <el-menu-item index="2-1">页面4</el-menu-item>
+            <el-menu-item index="2-2">页面5</el-menu-item>   
           </el-submenu>
           <el-menu-item index="3" disabled>
             <i class="el-icon-document"></i>
             <span slot="title">导航三</span>
           </el-menu-item>
-          <el-menu-item index="4">
-            <i class="el-icon-setting"></i>
-            <span slot="title">导航四</span>
-          </el-menu-item>
-        </el-menu>
+          <el-submenu index="4">
+            <template slot="title">
+              <i class="el-icon-setting"></i>
+              <span slot="title">Charts</span>
+            </template>
+            <el-menu-item index="4-1">
+              <router-link to="/charts">echarts</router-link>
+            </el-menu-item>
+          </el-submenu>
+        </el-menu>  
       </el-col>
       <el-col :span="20" style="margin-top:10px">
         <router-view></router-view>
