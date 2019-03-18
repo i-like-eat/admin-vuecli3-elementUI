@@ -1,6 +1,6 @@
 <template>
   <div >
-   这是默认导航页面
+   这是第二个导航
   </div>
 </template>
 <script>
