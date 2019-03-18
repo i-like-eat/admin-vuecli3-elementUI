@@ -7,8 +7,9 @@ import qjGrid from '../components/content/qj-grid'
 import qjForm from '../components/content/qj-form'
 import qjList from '../components/content/qj-list'
 import qjCharts from '../components/content/qj-charts'
+import qjPage from '../components/content/qj-page'
 
-export default new VueRouter({
+let router = {
 	routes:[
 		{
 			path:"/",
@@ -28,13 +29,19 @@ export default new VueRouter({
 				},
 				{
 					path:"list",
+					name:'list',
 					component:qjList
 				},
 				{
 					path:"charts",
 					component:qjCharts
+				},
+				{
+					path:"page/:id",
+					component:qjPage
 				}
 			]
 		},
 	]
-})
+}
+export default new VueRouter(router)

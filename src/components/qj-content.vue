@@ -20,7 +20,7 @@
                  <router-link to="/form">Form</router-link>
             </el-menu-item> 
              <el-menu-item index="1-3">
-                 <router-link to="/list">List</router-link>
+                 <router-link :to="{name:'list'}">List</router-link>
             </el-menu-item>   
           </el-submenu>
           <el-submenu index="2">
@@ -28,8 +28,12 @@
               <i class="el-icon-menu"></i>
               <span slot="title">导航二</span>
             </template>
-            <el-menu-item index="2-1">页面4</el-menu-item>
-            <el-menu-item index="2-2">页面5</el-menu-item>   
+            <el-menu-item index="2-1"> 
+              <router-link to="/page/four">页面4</router-link>
+            </el-menu-item>
+            <el-menu-item index="2-2">
+              <router-link to="/page/five">页面5</router-link>
+            </el-menu-item>   
           </el-submenu>
           <el-menu-item index="3" disabled>
             <i class="el-icon-document"></i>
@@ -58,11 +62,6 @@
       return {
         
       };
-    },
-    watch:{
-      "$route":function(to,from){
-        console.log(to)
-      }
     },
     methods: {
       handleOpen(key, keyPath) {
